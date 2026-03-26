@@ -15,21 +15,19 @@ A ROS 2 project built on **turtlesim** where a controller turtle autonomously ch
 
 ## Package Structure
 
-\```
 turtle-chase-ros/
 ├── turtlesim_pkg/
-│   ├── turtlesim_pkg/
-│   │   ├── spawner.py          # Spawns turtles randomly, handles kill service
-│   │   └── turtle_controller.py # Chases and catches turtles
-│   ├── package.xml
-│   ├── setup.py
-│   └── setup.cfg
+│ ├── turtlesim_pkg/
+│ │ ├── spawner.py
+│ │ └── turtle_controller.py
+│ ├── package.xml
+│ ├── setup.py
+│ └── setup.cfg
 └── my_robot_bringup/
-    ├── launch/
-    │   └── turtlesim_catch_them_all.launch.xml
-    └── config/
-        └── catch_them_all.yaml
-\```
+├── launch/
+│ └── turtlesim_catch_them_all.launch.xml
+└── config/
+└── catch_them_all.yaml
 
 ## Dependencies
 

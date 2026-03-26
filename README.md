@@ -14,7 +14,6 @@ A ROS 2 project built on **turtlesim** where a controller turtle autonomously ch
 - **Acceleration limiting** prevents jerky movements during chasing
 
 ## Package Structure
-
 turtle-chase-ros/
 ├── turtlesim_pkg/
 │ ├── turtlesim_pkg/
@@ -29,6 +28,8 @@ turtle-chase-ros/
 └── config/
 └── catch_them_all.yaml
 
+text
+
 ## Dependencies
 
 - ROS 2 (Humble or later)
@@ -37,19 +38,14 @@ turtle-chase-ros/
 
 ## Build & Run
 
-\```bash
-# Clone into your ROS 2 workspace
+```bash
 cd ~/ros2_ws/src
 git clone https://github.com/jainanshu0912/turtle-chase-ros.git
-
-# Build
 cd ~/ros2_ws
 colcon build
 source install/setup.bash
-
-# Launch
 ros2 launch my_robot_bringup turtlesim_catch_them_all.launch.xml
-\```
+```
 
 ## Parameters
 
@@ -60,3 +56,4 @@ ros2 launch my_robot_bringup turtlesim_catch_them_all.launch.xml
 | `angular_speed_controller` | `6.0` | Angular speed multiplier |
 | `turtle_name_prefix` | `"turtle"` | Prefix for spawned turtle names |
 | `spawn_frequency` | `1.0` | Turtles spawned per second |
+EOF

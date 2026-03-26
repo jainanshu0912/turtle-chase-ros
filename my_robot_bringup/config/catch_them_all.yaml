@@ -1,0 +1,10 @@
+/turtle_controller:
+  ros__parameters:
+    catch_closest_turtle_first: True
+    linear_speed_controller: 10.0
+    angular_speed_controller: 10.0
+
+/turtle_spawner:
+  ros__parameters:
+    turtle_name_prefix: "test"
+    spawn_frequency: 1.0
